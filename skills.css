@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    background-color: #ffffff;
+    color:rgb(83, 60, 50);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+
+    padding: 20px;
+    color: rgb(78, 132, 201);
+  }
+  
+  header h1 {
+    font-size: 42px;
+  }
+  
+  ul {
+    
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline;
+    margin: 15px;
+  }
+  
+  ul li a {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 15px;
+    margin: 100x;
+    text-decoration: none;
+    color: #fff;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  
+ 
+  ul li a[href="skills.html"] {
+    background-color: rgb(78, 132, 201);
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+  
+  ul li a[href="contact.html"] {
+    background-color: rgb(78, 132, 201);
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+
+  ul li a[href="projects.html"] {
+    background-color: rgb(78, 132, 201);
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  } 
+  
+  
+  ul li a[href="About.html"] {
+    background-color: rgb(78, 132, 201);
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+  ul li a:hover {
+    background-color: rgb(78, 132, 201);
+  }  
+
+
+  .img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+  .round-image {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .round-image img {
+    display: block;
+    margin: 0 auto;
+  }
+   
+  h2{
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+
+
+.card {
+    
+    background-color: rgb(172, 179, 198);
+    box-shadow: 0 6px 10px 0 rgba(198, 167, 167, 0.861);
+    transition: 0.3s;
+    padding: 60px;
+    height: 250px;
+    text-align:center;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 5px;
+   }
+  
+  .card:hover
+   {
+    box-shadow: 0 8px 16px 0 rgba(215, 74, 74, 0.769)
+   }
+  
+  .container 
+  {
+    padding: 2px 16px;
+  }
+ 
+.column {
+    
+    float: left;
+    width: 400px;
+    padding: 5%;
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+    /* Style the footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+        padding: 20px;
+        color: rgb(83, 60, 50);
+        text-align: center;
+        font-size: 14px;
+      }
+
+      h4{
+        color: transparent;
+        font-size: .5rem;
+        margin: 30px;
+      }
+      h5{
+        text-align: center;
+        font-size: 2rem;
+        
+        
+      }

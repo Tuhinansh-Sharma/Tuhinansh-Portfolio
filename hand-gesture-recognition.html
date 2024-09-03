@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Gesture Recognition Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for the smooth scrolling effect */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('back2.png'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 5xl;
+      margin: 100px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .small-image {
+     width: 200px;
+     border-radius: 20px;
+     margin: 25px;
+     height: auto;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Animation classes */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slideInLeft 1s forwards;
+    }
+
+    @keyframes slideInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .slide-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      animation: slideInRight 1s forwards;
+    }
+
+    @keyframes slideInRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="text-white min-h-screen font-sans">
+  <!-- Header Section -->
+  <header class="p-6 flex justify-between items-center bg-opacity-90 bg-gray-800 rounded-b-lg shadow-lg fade-in">
+    <h1 class="text-4xl font-bold"><a href="projects.html" style="text-decoration: none; color: white;">Hand Gesture Recognition</a></h1>
+    <nav class="ml-auto">
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex items-center justify-center">
+    <div class="text-center content-box fade-in">
+      <h2 class="text-5xl font-extrabold mb-4">Welcome to Hand Gesture Recognition Project</h2>
+      <p class="text-xl mb-6">Explore the details of our innovative project that uses hand gestures to control a rover.</p>
+      <a href="#introduction-about" class="text-white font-bold py-2 px-4 rounded-full" style="background-color: rgb(78, 132, 201);">Learn More</a>
+
+    </div>
+  </section>
+
+  <!-- Introduction and About Us Section -->
+  <section id="introduction-about" class="py-10 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Introduction</h2>
+      <p class="mb-6">Our project focuses on developing a hand gesture-controlled rover to assist individuals with disabilities, enhancing their mobility and independence through intuitive control technology. By leveraging advanced image processing and microcontroller integration, our solution offers a reliable and efficient means of navigation, breaking down barriers and opening new possibilities for those in need. This innovative approach aims to provide an affordable and user-friendly solution that can be easily adapted to various environments and user requirements. The technology behind the rover includes state-of-the-art components and software that ensure high accuracy and responsiveness, making it a valuable tool for improving the quality of life for many individuals.</p>
+
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <div class="mb-6">
+        <h3 class="text-2xl font-bold mb-4">Team Members</h3>
+        <div class="flex flex-wrap justify-center slide-in-left">
+          <div class="m-4 text-center">
+            <img src="mayank.jpg" alt="Mayank Soni" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Mayank Soni</p>
+            <p>S2307-812</p>
+            <a href="mailto:mayank.soni@mitaoe.ac.in" class="text-blue-400 hover:underline">mayank.soni@mitaoe.ac.in</a>
+          </div>
+          <div class="m-4 text-center">
+            <img src="tman.jpeg" alt="Tuhinansh Sharma" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Tuhinansh Sharma</p>
+            <p>S2306-1188</p>
+            <a href="mailto:tuhinansh.sharma@mitaoe.ac.in" class="text-blue-400 hover:underline">tuhinansh.sharma@mitaoe.ac.in</a>
+          </div>
+          <div class="m-4 text-center">
+            <img src="pranav.jpeg" alt="Pranav Khatavkar" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Pranav Khatavkar</p>
+            <p>S2309-1397</p>
+            <a href="mailto:pranav.khatavkar@mitaoe.ac.in" class="text-blue-400 hover:underline">pranav.khatavkar@mitaoe.ac.in</a>
+          </div>
+          <div class="m-4 text-center">
+            <img src="MYPIC.png" alt="Siddhant Mishra" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Siddhant Mishra</p>
+            <p>S2304-490</p>
+            <a href="mailto:siddhant.mishra@mitaoe.ac.in" class="text-blue-400 hover:underline">siddhant.mishra@mitaoe.ac.in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statement and Objectives Section -->
+  <section id="problem-objectives" class="py-10 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Problem Statement</h2>
+      <p class="mb-6">The task is to develop a hand gesture-controlled rover system that empowers users, including individuals with disabilities, to command and maneuver the rover through intuitive hand gestures. This system aims to enhance accessibility and user interaction, enabling individuals of all abilities to navigate their surroundings with ease and independence.</p>
+
+      <h2 class="text-3xl font-bold mb-4">Objective and Scope</h2>
+      <p class="mb-6">
+        Objective<br>
+        To study socket programming (image processing).<br>
+        To interface image processing with microcontroller (ESP32).<br>
+        To interface motor driver with microcontroller.<br>
+        To recognize the real time hand gestures using image processing and navigate the rover.<br>
+      </p>
+      <p class="mb-6">
+        This project encompasses three primary objectives. Firstly, it seeks to explore socket programming techniques, with a focus on image processing. Secondly, the project aims to establish communication between image processing and a microcontroller, specifically the ESP32. Thirdly, it endeavors to interface a motor driver with the microcontroller. Lastly, the project aims to implement real-time hand gesture recognition using image processing and utilize this data to navigate the rover.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features and Methodology Section -->
+  <section id="features-methodology" class="py-10 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Features and Methodology</h2>
+      <p class="mb-6">
+        The hand gesture-controlled rover boasts an array of features that make it a powerful tool for individuals with disabilities. Firstly, it utilizes advanced image processing techniques to accurately recognize and interpret hand gestures, allowing users to control the rover with natural and intuitive movements. Secondly, the system is equipped with a robust microcontroller, specifically the ESP32, which ensures seamless communication and control. The motor driver, integrated with the microcontroller, provides precise and responsive movement, enabling the rover to navigate various environments with ease. Additionally, the rover's design is focused on user-friendliness, ensuring that individuals with varying levels of technical expertise can operate it effortlessly.
+      </p>
+      <div class="flex justify-center mb-6 slide-in-left">
+        <img src="methodology.jpg" alt="Methodology" class="w-64 h-auto rounded-lg mx-4">
+        <img src="t3.jpg" alt="Team Work" class="w-64 h-auto rounded-lg mx-4">
+      </div>
+      <p class="mb-6">
+        The methodology of this project involves several key steps. Firstly, extensive research is conducted to understand the requirements and challenges faced by individuals with disabilities in terms of mobility. Secondly, the development phase includes designing and programming the image processing algorithms to accurately recognize hand gestures. The microcontroller is then programmed to interface with the image processing system and the motor driver. Rigorous testing is conducted to ensure the system's accuracy, reliability, and responsiveness. Finally, feedback from users is gathered to make necessary improvements and enhancements.
+      </p>
+    </div>
+  </section>
+
+  <!-- Implementation Section -->
+  <section id="implementation" class="py-10 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Implementation</h2>
+      <p class="mb-6">
+        Implementing a hand gesture-controlled rover involves several critical components. The process begins with image processing, where the system uses a camera to capture and analyze hand gestures. Advanced algorithms are employed to identify specific gestures, which are then translated into commands for the rover. The ESP32 microcontroller plays a pivotal role in this process, acting as the bridge between the image processing unit and the motor driver. By receiving the gesture commands, the microcontroller directs the motor driver to move the rover accordingly. This seamless integration of hardware and software components ensures that the rover responds accurately and promptly to user inputs, providing a reliable and intuitive control system for individuals with disabilities.
+      </p>
+      <div class="flex justify-center mb-6 slide-in-left">
+        <img src="test1.jpg" alt="Testing 1" class="small-image">
+        <img src="test2.jpg" alt="Testing 2" class="small-image">
+      </div>
+      <p class="mb-6">
+        The implementation process also involves rigorous testing and validation to ensure the system's reliability and accuracy. Various hand gestures are tested under different conditions to evaluate the system's performance. The microcontroller's programming is fine-tuned to optimize the communication between the image processing unit and the motor driver. Additionally, the rover's design is refined to enhance its maneuverability and stability. User feedback is gathered to identify areas for improvement, ensuring that the final product meets the needs and expectations of individuals with disabilities.
+      </p>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section id="references" class="py-10 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">References</h2>
+      <ul class="list-disc list-inside">
+        <li><a href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf" class="text-blue-400 hover:underline">HC-SR04 Datasheet</a></li>
+        <li><a href="https://store-usa.arduino.cc/products/arduino-nano" class="text-blue-400 hover:underline">Arduino Nano</a></li>
+        <li><a href="https://drive.google.com/file/d/1yqjQzGRJ2yNK_ZArBBbMvlrEo4O7qbyr/view" class="text-blue-400 hover:underline">MITAOE 2024 syllabus guide</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Socket_programming" class="text-blue-400 hover:underline">Socket Programming - Wikipedia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/ESP32" class="text-blue-400 hover:underline">ESP32 - Wikipedia</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="p-6 text-center bg-gray-800 rounded-t-lg shadow-lg">
+    <p>&copy; 2024 Hand Gesture Recognition Project Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>
